@@ -1,0 +1,15 @@
+.price-filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .lowest-price, .highest-price {
+    font-weight: bold;
+  }
+  
+  .range-value-display {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
