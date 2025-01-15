@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "../App.css"
 
-function Header() {
+function Buttons() {
   const navigate = useNavigate();
 
   function goHome() {
@@ -20,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Buttons;
