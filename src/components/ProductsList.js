@@ -8,7 +8,7 @@ export default function ProductList(items) {
           key={index}
           name={product.name}
           price={product.price}
-          img={product.image}
+          img={product.img}
           addToCart={items.addToCart}
         />
       ))}
