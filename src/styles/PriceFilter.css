@@ -1,7 +1,7 @@
 .price-filter-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
   
   .lowest-price, .highest-price {
@@ -9,7 +9,6 @@
   }
   
   .range-value-display {
-    margin-left: 10px;
-    font-size: 18px;
+    margin-left: 15px;
+    font-size: 20px;
   }
-  
