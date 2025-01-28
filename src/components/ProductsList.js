@@ -1,4 +1,5 @@
 import ProductItem from "./ProductItem";
+import "../styles/ProductsPage.css";
 
 export default function ProductList(items) {
   return (
