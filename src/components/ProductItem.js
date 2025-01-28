@@ -1,4 +1,5 @@
 import Purchase from "./Purchase";
+import "../styles/ProductsPage.css";
 
 function ProductItem(items) {
   return (
