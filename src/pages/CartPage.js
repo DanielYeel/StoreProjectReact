@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ref, get, remove } from "firebase/database";
-import analytics from "../components/FirebaseDB";
+import database from "../components/FirebaseDB";
 import CartItem from "../components/CartItem";
 import "../styles/CartProduct.css";
 import "../styles/CartPage.css";
@@ -12,7 +12,7 @@ function CartPage() {
 
   const fetchCartItems = async () => {
     try {
-      const dbRef = ref(analytics, "ProductsList");
+      const dbRef = ref(database, "ProductsList");
       const snapshot = await get(dbRef);
 
       if (snapshot.exists()) {
@@ -35,7 +35,7 @@ function CartPage() {
 
   const clearCart = async () => {
     try {
-      const dbRef = ref(analytics, "ProductsList");
+      const dbRef = ref(database, "ProductsList");
       await remove(dbRef);
       console.log("Cart cleared successfully.");
       setDeleteToggle((prev) => !prev);
